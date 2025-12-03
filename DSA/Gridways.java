@@ -1,4 +1,4 @@
-public class classroom {
+public class Gridways {
     public static int gridways(int i,int j,int n,int m)
     {
         //base case

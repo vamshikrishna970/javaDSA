@@ -1,6 +1,4 @@
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Scanner; 
 
 class MultiDemensionalArraylist {
     public static void main(String[] args) {
@@ -19,7 +17,7 @@ class MultiDemensionalArraylist {
         for(int i=0; i<mainlist.size(); i++){
             ArrayList<Integer> currlist = mainlist.get(i);
             for(int j=0; j<currlist.size(); j++){
-            System.out.println(mainlist.get(j));
+            System.out.println(currlist.get(j));
         }
     System.out.println();
     }

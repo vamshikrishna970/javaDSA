@@ -1,4 +1,4 @@
-public class classroom{
+public class nQueens{
     public static void nqueens(char board[][], int row){
         //base case
         if(row==board.length){
@@ -15,6 +15,30 @@ public class classroom{
             }
         }
     }
+
+    // Check if it's safe to place a queen at board[row][col]
+    public static boolean isSafe(char board[][], int row, int col) {
+        // Check column
+        for (int i = 0; i < row; i++) {
+            if (board[i][col] == 'Q') {
+                return false;
+            }
+        }
+        // Check upper left diagonal
+        for (int i = row - 1, j = col - 1; i >= 0 && j >= 0; i--, j--) {
+            if (board[i][j] == 'Q') {
+                return false;
+            }
+        }
+        // Check upper right diagonal
+        for (int i = row - 1, j = col + 1; i >= 0 && j < board.length; i--, j++) {
+            if (board[i][j] == 'Q') {
+                return false;
+            }
+        }
+        return true;
+    }
+
     public static void printBoard(char board[][]){
         System.out.println("-----Chess Board-----");
         for(int i=0;i<board.length;i++){
@@ -23,7 +47,8 @@ public class classroom{
             }
             System.out.println();
         }
-    }public static void main(String args[]){
+    }
+    public static void main(String args[]){
         int n=4;
         char board[][]=new char[n][n];
         //initialize the chess board

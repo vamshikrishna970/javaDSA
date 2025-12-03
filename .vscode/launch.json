@@ -5,6 +5,27 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "nQueens",
+            "request": "launch",
+            "mainClass": "nQueens",
+            "projectName": "javaDSA_db40c0e"
+        },
+        {
+            "type": "java",
+            "name": "classroom",
+            "request": "launch",
+            "mainClass": "classroom",
+            "projectName": "javaDSA_db40c0e"
+        },
+        {
+            "type": "java",
+            "name": "MultiDemensionalArraylist",
+            "request": "launch",
+            "mainClass": "MultiDemensionalArraylist",
+            "projectName": "javaDSA_db40c0e"
+        },
+        {
             "type": "cmake",
             "request": "launch",
             "name": "CMake: Externally launched",

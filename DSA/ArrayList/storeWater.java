@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 public class storeWater {
-    public static int storeWater(ArrayList<Integer> height) {
+    public static int maxWater(ArrayList<Integer> height) {
         int left = 0;
         int right = height.size() - 1;
         int maxArea = 0;
@@ -33,7 +33,7 @@ public class storeWater {
         height.add(3);
         height.add(7);
 
-        int result = storeWater(height);
+        int result = maxWater(height);
         System.out.println("Maximum water that can be stored: " + result);
     }
 }

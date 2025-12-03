@@ -1,5 +1,5 @@
-public class classroom {
-    public static void findsubset(string str, string ans, int i) {
+public class subsets {
+    public static void findsubset(String str, String ans, int i) {
         // base case
         if (i == str.length()) {
             System.out.println(ans);
